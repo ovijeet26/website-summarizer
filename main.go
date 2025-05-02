@@ -8,7 +8,6 @@ import (
 )
 
 func main() {
-
 	summary, err := Summarize("https://edwarddonner.com")
 	if err != nil {
 		log.Fatal("Error summarizing:", err)
