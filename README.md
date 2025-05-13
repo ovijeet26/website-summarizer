@@ -19,7 +19,17 @@ It uses a custom prompt to instruct the model to summarize only relevant content
 - **net/http** (API communication)
 - Optional: **glamour** (terminal markdown rendering)
 
-<pre> ## 📁 Project Structure ``` website-summarizer/ ├── main.go ├── go.mod └── src/ └── core/ ├── website.go # Web scraping and prompt generation ├── llm.go # LLM API interaction └── model.go # Shared message/request/response structs ``` </pre>
+## 📁 Project Structure 
+```
+website-summarizer/
+├── main.go
+├── go.mod
+└── src/
+└── core/
+├── website.go # Web scraping and prompt generation
+├── llm.go # LLM API interaction
+└── model.go # Shared message/request/response structs
+``` 
 
 ## 🚀 Getting Started
 
