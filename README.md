@@ -51,12 +51,13 @@ go run main.go
 
 ### Basic Usage
 
+```
 summary, err := Summarize("https://example.com")
 if err != nil {
-log.Fatal(err)
+  log.Fatal(err)
 }
 fmt.Println(summary)
-
+```
 
 ### Sample Output
 
@@ -69,14 +70,13 @@ There are no news or announcements on the page.
 ## ⚙️ Configuration
 
 Modify the LLM settings in `llm.go`:
-
+```
 const (
 OpenAIEndpoint = "http://localhost:11434/v1/chat/completions"
 ModelName = "llama3.2"
 APIKey = "ollama"
 )
-
-
+```
 ---
 
 _Project maintained by [Ovijeet](https://github.com/ovijeet26) | [Report Issue](https://github.com/ovijeet26/website-summarizer/issues)_
