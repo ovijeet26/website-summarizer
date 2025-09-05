@@ -23,6 +23,7 @@ func Summarize(url string) (string, error) {
 
 	messages := website.MessagesFor()
 
+	// Added a new comment.
 	response, err := core.ChatWithModel(messages)
 	if err != nil {
 		return "", fmt.Errorf("failed to chat with model: %w", err)
@@ -30,3 +31,4 @@ func Summarize(url string) (string, error) {
 
 	return response, nil
 }
+	
